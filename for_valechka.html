@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Для Валечки!!</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle, #35213d, #130e1b);
+    font-family: monospace;
+    color: #ffd6e7;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bouquet {
+    display: block;
+    white-space: pre;
+    font-size: 10px;
+    line-height: 1;
+    color: #ffb8d2;
+    text-align: left;
+    text-shadow: 0 0 8px #ff6fa9;
+    transform-origin: top left;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+    font-size: clamp(22px, 6vw, 42px);
+    color: #ffb6d1;
+    text-shadow: 0 0 15px #ff4d91;
+    opacity: 0;
+    transition: opacity 1.5s;
+    text-align: center;
+}
+
+p {
+    color: #e6b7d0;
+    font-size: clamp(12px, 3vw, 15px);
+    opacity: 0;
+    transition: opacity 1.5s;
+    text-align: center;
+}
+
+/* Скрываем поле с исходным рисунком */
+#artSource {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <pre class="bouquet" id="bouquet"></pre>
+
+    <h1>Валечка, не грусти пжпж</h1>
+
+    <p>Это тебе букетик через интернетик</p>
+
+</div>
+
+
+<!--
+====================================================
+ВСТАВЬ СЮДА СВОЙ ASCII-БУКЕТ
+Между тегами textarea и /textarea
+====================================================
+-->
+
+<textarea id="artSource">
+
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+                                                                                    '`,:;:,:>-[\\"    .        .       .  .  .                                                                                  ...     
+                                                                              l])jvczcvvczcuuxxf:.  '`^^ 'l!"';;,.. '''^"""``'^^'"'                                                                           ...  .    
+                                                                      `<?(rn[![~|vzXXYYYYYUUXcvi''`""":<~+!l<!:"::``^```''`";"l:;I,.'`. '.                                                                              
+                                                                    "<-fzz)+)))}+l{XXYYXzvnxcv<'.^:i+_+"'"_<!ll!>li!!llI;;llllII;>i^,;il;"`.       `' `^                                                                
+                                                                  ?xxrxvvcc|1tf)/uXUUzJJCCJJJJ)^`,!_]{|?;llI::;l!i~~<>ii!!lIIII;;I;,I?-~!:`        l-~~I'                                                               
+                                                                 .  ^fXYUYUXzn[+<l/UujJJJXuUCJJCtII>[(rf>;,;l!<~+__+<?}]-?_++++~+++<i+-;`''`.     ~_}+>_<^                                               .              
+                                                         .i])()l`^'"' '/ccczx_l]+Ii>}1Xx/UCJJJJJ?~_?>]nn[l:,:;l!><+__-__][?]-_-_>i><<>lI>i:`     -({\{?>`                                           ..                  
+                                                     ';<})||tt\jnxvxt|(/vvvx{;~[{?;>>>)nJJCCCJJC[+-]<;!j\-!;::Ili>~+____+++_~++__+<>!:,?~l:.     .-tft?:    "'                                                          
+                                                ';?1(||\|xfnvnrYXYYcj1<vnnvr}l}(\|}+?}1XUvj|(jvcXr]]>:I!)|]ii_][]][{(\\/tttt|?l,^":;:,]]!;"'   i?.+{I!_^    i}]-lI_[?~,                                                 
+                                             ,?|tfffjfxcvnzJu/xUUCUx~. _f((rj{fjxrj{+:  .'''''...    ."I>(}>><_-]}1)(\/tfjjjjjff/|1_,!]I!llIII;!(tf/?`  ://[+t1|ft/\)1[-:.                                              
+                                          .<|ttrxnnvnzucxnYnrnxrYC/'   ?){r|rXcz/^  .````^""""^"^^''..   . .  ^<_-]}{1(|\/tfjfff\){1[_>[}[-_-_-??]]-!`   lzUYXY(vczzfrj({?i                                             
+                                        ;)fttrruccvuunucYYcuruXJLY{ '`"(/|txrrx; ......'^""""^^```^^'. .' `;^.  :?]][}{1))|\||){][??]{(]]1\tjjj/|()1{][]<i\YCJYvjnYcuxrxj/(}~"                                          
+                                   . "[/ttftnuuzcvzuzXXYJnxvvcXLJvu{ "[!'           .`^,:I!>>>>il;^,!,' ."'+i,. `[[[}{1))(((}]]]({]1fv}|f|{|tjt\/fjrrx/|f/(}}jcccuzUXzxtnrfjj{?i`                                       
+                                  '_\fxxxuccvvczccczYUYnuccvuvYLzunn?          .   '",^`":;:;;:"","`I]!^.I"<:"".'''`!1(||\\\{?{xz|}/zujn1txjfjjfjxvccuxf\\tft|{/zzXXUYzcxjrnxrr|1?l.                                    
+                                 '[tffnvzXXXXvuXJJJJXjvYzzvuuvUJuun)     '^  ':"  `^ '";:,:Ii<>~l",<;}_l>~?-" ::I,    _xxtjux}1zJv{fUXYv|vncjfnuxuuxuzzcvur\|)1)|XUJYUYXzzujxvurr/1?"                                   
+                                  itxcXXuvXUJJJJJYxvUUUUYXzvvcUXvux'   .,>l '::".'I"`ll"I";!I;<i]}!|)u(l/[u-^+>~l' .^. '}uvYJz(/JLU(zCLXrXYznznzvuccunnnnftrj\f/{{1fYUJUUYXXcxccujf\)]!                                 
+                                '?tuczzzzYUUCCUccCCJJJJUUYXzccYXccu'   ">]1^I_`I>,{}![;?);>;""""!;I!-_:[[tl[/_{>. ^lI,`'^?zYCLLx/JQUjxQLuzQJucYzccccccnrxvnf|jtjf{//1)czYUUUYYYcczzuf/|{>                               
+                                .(rvYJLLJJJJzXCLLLLLCCJJJXvcJJCCCJC(   ^>?]?!}t]>j?u_I,,:,;II!I,:II:I~!;"I<v/jl `_+<!;^`'iczJLQ0UfUJJX\vJncUzjuzuvccczvcnnXntj/r/|1uj\1|UJUuvJJJYcYzXXn)}+'                             
+                     .           !<;>/JQQCUJLLQLLLJUXczUCLLLCCCCCCLQ\^ ', ._}+fc[l:~}~ill!!>>>>!i~_~!,;ii~)n~^i]1?+>l:!)XUCJcCUYLJuXCUYzxuvrczcnuuunucnXXuUuuc/nj({vur\[|UJJJzcYXcnnnxj|}[~                             
+                                      ~nrrjxuurjfftcCLQLLLLCCCCCCCLLQQ{":_{l'\/]~l;,:II;:I!<_+__?>i?]__+~]I:!}-\t1-!-nnnxYznYCLcrJCJYLYjcUunvUXnvzvnruvvXczJztuzj{j|nx\}?XLCCUCXXCCUJ/. ",.                             
+                                     >tuvUJCLLLLLLLLLQQLLLLCCCCCLLU(__]-}[-?xv_I:I<[[{{)1}]_~<il<+-]1(\[<>i!~\I\x(])->i-xYvXCCLLX/fYLLQCUvjrzvcUYYzcvnuvvcczJUx/rcx()f(?{YCCCCJJJJJJf  `_[+"                            
+                               .   ^<(\fjnYYUUJJJJCCLJQLLLLLLLCYLrI!~?1-}|jr-<rt[+-_il}\t/\\\\\|\\/ft1{?i"^i)}ifv{?I"`'.<nzJCCLLJCv)|XCQLCJCz((nXUJJJUYznjrvYCLJc|?]t\[?uCCCCJJUYJU{ ,(f/_,,;^.                         
+                           '.`:,'l)rf|\fxrrzXXYUUJCYCLQLLLLLQQQCU)";i_}(}|jc|!i-f/[??]}{{)\jf)[~!:"":!-__<i+j?-r{I^`'.,tzuYLCCJfzJUUzt1tUQCCCCCJXnf|/nzXzcvvuuvvccx|1|r|{vCYUUXzcujjjrjfj[~}(+'                         
+                         .";:,+]:~{|rnnuuunnzXXYYUJYvYXXzUQQQQ0QLx:":!~{()fzv~i!!-?!:,^^'`,>?[1(|())}]-~>i>{c1_:''... -njvYLXcv}\(zUUUUYf(uJCJUUUUYUJJCJUXJLQCUXzzznncxt1-jUUXzujvr)<  ._|[~<<;                         
+                       ```;!}]-|l|||/xnnxrruncnrj\\(1))(((xJL00O0Y!`^,;i])]:">}|//\||(()((((((((()1{[?_+<>>>,'      ,uYr[-ij]<<fYcJJJJJJJJUvrcCQQQLCJYcunj\){{{{[]1rcvr\{?-/l :|r/`      `]1_,                          
+                    `^""Il:I]((i-[|xjt/\(|()))(|/ttjnrf/|()|ULQQ0O)'``^";<1uUxfjft/\|||((((((((())1{[?++\tt1_!::I-tzCCzzu~+(_\J|LCCCCCJJCCCCLLCJJCQQQQLLLLLLLQQQLJYcr/)[???"    ?;  .``^^'`+_;                          
+                   ^,":;ii>l>{)~--?{(\tft/xvccvnf|nzvcUXvr|1/Q0OO0Qj` ..'",;>)nxf//\||||(((((()((()1[i{tttf/(1{{1C)]>>?!|ccn}vfcXLCCCCJLCLLLLLLLQQQQQQLLLLLQ00LJXvt(}}[](rx]  ^,^  `;,  `'.`^''.                        
+                 .^:;;l;l+>i+}?+_-{\ruxxvzYYYYYXzvjnUYcx/(/j\zJYvvJQYvXUni:;IIli<-}(|//\\\|||||\|1_~}\////|(1{1(c]+--[[){[!l>l:l-nLLYfxULQQQLCCCCCCJYXcczzzcunr/|1|nfn(-)\|x{">+> ^<i ,;`",:lII;,`.                     
+                ';;;I,:!+_l<-{--]|rvvjxzYYYXuvzvxnYnYLJXxt)jzXCJcrrYQYCCJYX<;;,,,,,""",,,"^^^^^-)1t\\//\\\|()(\uLC{/t(\t_>1-lil!~CQ\fQQQQQQQQQQQQQQQQQLCYn/\\\tuzYzXvtvr|/t1]>\|<.<{^:>l~"^;;IIIII:^                    
+               '",;;:;!_[!~-{]?}ffrfcXYUUJUXXUUYUzcUcQ0QJn|)YULCUnffY0JLUUCCn+;;;::,""""^^^^:[\\\\|(|t/t///ttrXQQQYUCt1+I~?_1-<;"-|tQQQQQQQQQQQQQQQQLQQQLLLJUCJzYzvzczuxj/)(1[\/),j).[[t<l+~l;II,"^'.                   
+              ``",IlI<+}>_??[|(\rvnXYUYcXYYYUYYQCUcUYU0OOY\)UJQQJvftnJYcxvUnxJCr(]][[]?--[\jtftttttttttrrxnnz0000QQC/()+l+]+\[~;",?{L00QQQQQQQJLQQQQQCCLLCJJJunzzuvUxtnu/|fr?tzj]in>;[r_")+?]-__+>;:`                   
+            .'^,:I!l<[1]]{?(||fuzvzXcczUUJJJUCJX0OXXQjCOOJ|t0LL0Lzr/LXYuurfcXzUCJcxnxnnuxrrrjjfffjrrrnruczXvvcXUJJ0X/|]!!_[ft?<l;;]}n000QLUYUJULQQQQJCQLLYuuXucXzXXvuv\fnrf1(j})}_xl;}->"~-({~;:;!>!iI`                 
+            `,,;!!>?}((}{]ff\juvvncYzYYYYYUJJUJzCQzCQ\UQOv(v0O00LzfvQCYYYuuXvULUYXvnuzccvvvuuvvvuuvvczYLCLJUUUL0O00Cf/>!~)txx{~<>[\(vO0z(}[}}{{1)(/nYLUujruvXUXXvnurtncxt//1vn>[({/II)?~^,~]?(}-<!I,ii!^'               
+           .'`;<<-[{(|)]\rj/jnruunXXzYXYUUJJJUYvJUXQXfCQL/jYLOOOJvnLCzYzUUCXuUCLCQQLXJY\<!<[rXJUCCJQ0OQQCLCCJQ0OO000Xt~{/fxuvf{[1xuvLQJ({(/rnnuccntjxxuuuux\\nnnnnxucnrft/1nvj]:)/|~i][+,";,i+[+>lil,,!;`.              
+           .^:l<]111//]jxrffjrnnxcYnXXXYUUXzzYvYYzJCfYLLj/XYC0OQznULLLQJLLLLQCz\1]_!:,,,::;:,"`">>!!!i~-1\fxXCC0O0QQ0JxjrnvzXzxnXYXYccXujxvczXcuczXXXXYYYXXXzzr1[|xvurjf/|xzj(1i:x\},\_?<,l!:;;:I;:I:I""".              
+           ':i_{}]fj|\nnjtj\funrXcYuXYXUJYczYXXzXUCznCLujXYJCQQUuXCCLQQLLLOQLQl::,,;;Il!!:";!!!!!lII:"^,"^``''^l)XQ00Q0LXvXUCL0QXfxucvrXccXUYczXYXXYYYYYYYYYYYXXv|(}?}tj/ucj({{{:"|(>|{>}~I>!,;I;;l:^;;^^               
+           '"i-?|tftjxujtxjtfuuxUUzCYXYYXYYYzXuXJLCuUCXzYUJLQQUvXUUJCLQQQQLX?:,""^^"";;li>~~++++~<>ilII:ll:"^``'`^^^"::}0CJLLQLrt\\rvzXXzxjrnvxfxucccccXUXXXXXXXXzffr\1](xt()11{{I:|(}/{>+>lil:;i?~,^I,^.''             
+          '^,I}|ttjtrnr/rufufxXXuULCUYXzzXcUXvJJCCvvCJUJJCLLQUXYYYYUJCQQL1`^",,;Ili<<I><+_-?[]_>!I;;;II;:I_l"^``';I;,^^lQJCLQLn/|\rvzXc(/ncXXjcXUUUYXcvvczzzzzcrnvcuvznj(][((1)11{<;r|f)]~~<!i>l!>il`:"'.  .            
+           ';l>?1\ft||(\rffnXznuUJzcccuvYUJXYYJLLznCLLCLCUCQCYYYYYUJCUx}I,,,:;l>~i;,,,;!><~<~>iIIi>lI:"`^:!?!,^`'.i<i!!liXLQ0Jf\(fvzUn1jvXJUnzJLJUJJJUUUUYYYXXvxncvrxzzznf([}|()(()]^tjt([-!+_li+1(-!"...               
+                i}|\)1)\/nu/xcYJLCCJJLLLJYnXJLQQYxLLLCUcYQ00UXYYUJX(+~l",,,;l>~:^IIIi+--<<~+--][]->i>>l:"^`>?!,^`':]-<!lI+Y00Uf|\nzCCffuJCCvXQLCYzXJXzzXXzcXUUXXzxxcvjnczvxt(](r1jf\\;_ff/([__[<Ii<>il,.                
+              .l-)/rx/(t(ncYcttruzYJLUxnYJCLQ00CXLQJvjcCQQ0QUYYJJz{-+!""":;>~,"l~:I<<I<]1(}-__~i!!-}_!_]l"``,_i;^.,]}-~il>)Q0Jj|fvJLJjxCLXJuL0QzL0UCQ00QQCCJYYYXzzzxxcxrtxunxjjn{{znj(-1irrf{{+}/|\(]<l^                
+              ,::,""l~1t//xvzYJzxuuvUQQQQQLLCLQJUvjnYLLQQQ0CJLLLY{++_l,,::",^,>[il~l!?)/1??-?]})([+II]_!]~,^':?>;^^i-}-<>~?xQCn(jXLUJnv0UzUvO0vJLcCCJJUUXcXXczYJUzrfruvxvu/vuftv(i\zvu|/n}_jnj/[-[}+l^.                 
+             ..       !\fj(/jrnvXJCLLCYczC000Lx\vCLLCLQQQ0QLLLQv+<<-?I,I^`;!"I[}![Il?r\>[(|\)[?]_+x\_:}]-j[:`'_?i:l~",[-~_[/JzXxfXYULJX0YnCvLCnLUuLJ00LLYvXvYJncUYvrtncujccfnf(jn:l)zXz/unj~;uYJCC\i<!,                 
+                      .]\rvzuxjfjnvXC0OOOQUn/xULLQQQQQQQ00QQQQJ-i>+[1ii`.^-!:~1]-{,+]--]l-(/ft)?>(})X]`c}j/-`'i1-!-l`.~[__}fJLLCXYuYL0Y0L/JcXJuUUuYYUCCXJJczzJYxczvjtnzzvnfntr|tv(Il~tYYnvnrt_l|xjt\)]~I".              
+                       +(\ruzYUCJcXXXXcxt(tJQQQQ00000000O0JCCu~l!>?)/_" ."[<:^-|(n,I[+{!tc{]({?Yu?X]YX,z/v]iI'[|]}-"..!}??}uCCJJLQrcL0YO0X\JuCXcUUucnXXYLLzYXLYxvcufxzfzcXn|/f//uv\l:;i|ccvuuun_`,-}[+!^.               
+                       "((|/rncXYYznxncJQOZOOOOOOOOOOO0QCYJQv~ill>]|f1`.."[|:`-uxJ1:(|\t\)}?]}1]c)x-cu-rfJ<I~^u/|t>^..i{??jQ0JzJL0YrCQvQ0LcrUuCccUUcuXXXXUCQ0CznXXjuYzruYXvt\/tfuuuu\<"`:?jUCCUXu1i;][<^                
+                  .i1_I+/t/|(|/tjxnuXJJCCLLQQQQQQQQQLJUXXJ00Qf>!i<[\f{` .,}n+'~/\UU+1/fX\>l!>i+(1?<(x_j?Cn`]-ivfn[;..:11[Y00QXnULO0uvCuYOQLxxUvCYxvJJJzvvvJQCcxJYuUUXcfvUXuj|/fnuunxnxxrr[!_1/rnnxf|}+l`                
+                ^-{[\r|fjt(l!!I^'.,./CCLQLQQ000QLCUYzzzUQ0000c>ll>?(ft"..,?nn^^f1_Lz~{t_tj\||(?il?tt?((Un,?v?_XctI' if\uLQQQQYjXC00QXYCfJ00Lc)YYLLCYxnUQ0CcjxXzjzLCYcrnUYznf|/xunnxxxxnvuv(lIliii<<il:^                 
+                :{||))f|[}\<  i/! `(uczzzzzzzccvuuucUL0000QQQz<II>-{|_I'.'!\cY_:rz<(n1<}(}_~~-}1/|+(txU/IjJ}:uzn<'',tjYQ0QLQQQvxYQO00CJvfLO0QCxfcLQQLLLJYXcnxcJXJYcxjvJUYvnt\j|t\jni     `",,;;,. .`^`                  
+                l[/rrx)'    >,    .;?jjrunxrjrrnnvUCLCCUzcYYJc+;;!_}}i_l'.`<tYUz!IYX1:I[/{-}fxr?)n\-(}`/Jv"^fUn<,';/uzYQ0QQQQLufvJQOO0QJj|J0O00LY\)uQ000OOOQzfrYvrtvuzYXvnrt()nurt['     ,\/{[]"                        
+               "[1)\rj)>' ..':~'    }xjruccvc/1rjx/1(U\(YUYXXX(IIl<-]l<-_,'`l{cCQU}>{nnf|}?__-]{/x(+[rX): lcY(i""i_xYcurrXQ000JrxcC0OO00Lx{xC0Q0000QJXvuuvzYJYXzXYcntncuxjt|(trxt(i  :{,'~t/()??; !]                    
+               ^+)tr(!_[i.^-+   -t]+{(/nvccx_1u{-tXf[\zXvrurrnvtI;!~?i,>?)1I`^!{|}/vcj_!]jvccvt__rcc1,  !cJj-!;~[<<uXvxjfjXQ0Q0CuxcJQZZO00J\}tUCUJQOZZO0QOOO0LUcnf|}tuxjfjjt\|    `i{}I^;\jn[)|?<][-^                   
+                 l~" l]'  .^    ^1\ttfxjnnnnx|-1/|jt(xcjrrxrxucvvt<l<_;'^!?(jx[li[fr1!:Ii<+_+?-~I`  ^-xUv(+<?()?i,|Yvxjt/trQ0QQOQYuvUL0OZOO0Uf1)tcYXxt/ttt/\()1{}[/xrjrjfjfnti   . '}Il+--_\j\||[;                      
+                    i1          +({1fuxnrxxxuv{{rfjrnx]|ffUXcuvczXJQX\?i' '`;-fUCYt{1rYJXn\}-__[(rzYXu(}1rXj)-!;"]Uvr/|(|/jULLLLQ0QzcXJQ0OOZZOOCv|{)jXJUvt||(\rzYYXXYzjtf1nn/r[{\_l. ^~^  ;t\t]?:                       
+                              '-t\txuuzYvxrnnu|({t}})?|rfXutJ0QQLLCLJ{{\t?`   .`,>[tvYYXzXUJYvr/|jncXYLUf{_!;,""}znt|1}]}\nJLCLCLQ00CYzYJCLQ0OZZOOOO0QQ0OOO00QQLJUUYvr|xv< ';/j([f1;  !/_l[(\f[`                        
+                             `+jr//nnvvvzYXzXn|{}|r)(vuf\vzXxCQQ0OO0c++]1/xx}!^'.  .''`^^",I_1rUUJCYx{i;"^^^^"I(xt({[]-__(ULCCCCCCCQ00LUYYYUJCLLQ0OOZZZZZO00LLUYXzurt/jv; `i?)n/|t()+,   .^)\__;                        
+                          ,)\\\txnnfjuvzXXXUJt?\rf|xvYrncuuXJLQQQQ00Y+!>_})/xvY1-1)((\rzUJJCCJct-!:``.''``":I1r/)}]???]?XLQLL000QQQ000LLQQQLLLLQ000000QQQLLJYXuuf/\/fu\`~/unxnnj\/}~`.    [>                            
+                       ._\())\/({(juvxnczXzYUYXf!\/\YUnXCCcuLQQQQQQQQ/ll!<_])\jcu-~_][}[?_>l:,,^^^'  .^":!-|/)}?_+__-]}\OQLL00QQ0LQ0QQJJJLQQQQQQQLLCJUUYXcvcur\11|txcXJUUYzcxft/(1{{]+;                                 
+                     ']){1(|1[[)frtruzzvYUYYUJUYl:XJCCJCLLUX0QQQQLQQQQ|;;Il>+?[1\ju|!I;;:,"","",,!|t~~/uxt)[-+<<<~+-[{XOOQLCUJQcuJ000QJJ0Z0CJJUUYYXzzcvunnjjuuj))/vCLCCJUYzvvvj(1((1?___?i'    .                        
+                    <1}{{}[}1/t/tjrrnvcczXcXXXXX]:+zUJJCCCLLQQQQQQQ00Q0t:,,:;!<-?]}1)\\(1{{{1(txunnrjt1[?+<>ii>>+-[tYQLQQLXUYzcUccCQXvC0ZZZZZOQCJUYYXzczcvuxucunrXzJLLCCUUUXcunvr\11{?_~<~+~^              .            
+                   _{}[}{1(||tjxnuuvcvcczzczzzz}.  !cUUJJCCCLLQQQQQ0QQQQU{i;;!+<i_???-][{11(||\\||(trrxr]<i><_]|uQQQQQQLLCzXcUXUnuYjxQ0OZZZZZZZZ0LJYzzzXzznx\\/\rUJUYYzczzcczzcunxt(}[?_+~<<~i'                         
+                  ]}}{1)|t/tt/fxjjnnxnuvvczzXj;     ^jUUUJJCCLQQQQQQQQQ0000Lv[i!+}???-?---???][}}(vJQYnOQLCYUYU0Q|CLLLL0LYJXYcvurnjzvccrc0OOZZZZZQUzuxvXccx(1}[}jUUYYXzcvcurxxjttfrrf(1}]_<>>><;                        
+                `}}})|\|)1(11\\(/jffjxunucvt;         I/XUJCCCLLQQQQQQQQ00O] jx}|\1}[[[][[[][[}\XQLCQQ0Z0LQ0JYUX;nOz:/JvXJJXuucvYXzvrrn+ <ZOZZZZ0Q0Jufrvnt\1[[{'~nYYXzvcnvnt1rj)})|1{)||){[?_~~~l                       
+               I[{111{{][}[{){{|\\\frrxxt!               ';{uCLLLLQQQQQ0QXY,`ruzXUXXzunuvvvXJLU[ZOO0Lc/ZOL0OOQui/QX~v00000Lvuzvuccnrr\l.`r\YZZZZZOOOQxfft|}~..`    <uzccunu/}]/|-_]]<+?_]}1)}?-+_!.                     
+              ^l!+?[[[[]]][}}1)(\\\(?!"           ^>](jnczzcu\+, ,i_+i".  '/UUUYcvvczXYUJJJCCQ0ztZZOO0nLZOLOO0CzLQUQ000QQQQLzvvvuf/Ucjr(1^  ',;Ii-]+<)1"              ']txjf)]]11+~_-<~~<~~_____++l                     
+                         ...                  :1fjrnnuvzXXYYUUUYC)     .~uCJJJJJJvrrucXYUUUJCCL0uUOZZOOQ00Q0Q000O00QQQQQQQQLLLXjzr|LLnIf?    -JZZZZOO0QLLc_.               "}))}]]-_~~<<<><>+~~++++l                    
+                                           ;[|\tjrnuccczzXYYUJJJJJJ)_{[+tYYYYYUUUJYujxvzXUJJJJCCQOZOOO0LLQCLOOO0U0QQQQQLQQLLLLLLCCCCCX, ^}\|LZZOOOO0QQLCCJUYx-'                ',:!>++++~<~~~~~~~<~+l                   
+                                        '~11)(|/ruvcczzXXYYUUJUUzc+    /XXXXXXXYYUUUcvczYUUUJJCCL00QLCJJJJJCL000QQQQLLLLCCCCCCCCCJJJU[-YJJCLL0OO00QLLCJUYXXzcvx~.                                   ``                  
+                                       >[}}{1\fxxuvczzXXYUYUzvccvvz<  !vvuvcczXXXYYYUcjxzXYUJJCCCLCJJJJUYYYUJQ0QQLLLCCCCCJJJJJJJJJJf;\JUYccXUJJLQQLCCJUYXXzcvnrf{"                                                      
+                                     ,?][{(|/frnuvczXXXYUznuvfjnnxnj  >jtfjruuuzzzXYYYcnczYYUJJCCCCJJJJJJJUYYULLLCCCCJJJUUUYYYYXn?' IXJYzYYzzzzXULCJUUYXzzcvnrf/([l                                                     
+                                    I][{(/rnuvvcczzzzXzxxuftrn/(/jx)  '}|((ff/xvnczzzYYvucXYUUJJJJJJUUUUUUUYYXUCCCJJJJUUUYYXXXz+    lXUUYXcvuu/\nuXJUUUYXXzcuxf\)}]l                                                    
+                                   <[[}{1(/frnuvcczcnj\)fx(1|fr//tx;   '[()\|(rffvvuzXXXzzXXYYcfUUUUUUYYXXcnxvzJJJUUUYYYXXXzzzvx`   :cUYYXccf{/uf(|nXYYYXzcvvnnrt(}-"                                                   
+                     .            I{[{(\fruvuczzYYx/tj([)f/{(trjjj(      _(|((t|tvjnzzzXzzzXz_ "UYYYXXXcxrvzzXcXUUYYYXXXzzzccvvx!    fYYXXzx/uv|?_|/tXYXXzcvnj/))({]!.                                                  
+                                 ^?{(fruvcczzzXcjf1}|f{[1tr((frrr|         l](/tjrrnvvzXXzzx,.^xXzXXXzcvccvuxrrvXXXXXzzzccvuunxj:    iYYXzzxuvj}-|f[?)nXXXzzvunjt(){>                                                   
+                                 !(/||txuvzXXzt1{\{[|r{}1fx/tjrrf'             ^~<jxuuvccc(. '}JYccccczcvxt)\rnxcXzzzzccvvuunxj\'     iXXXzccvj1)u|?-?]fzccvnnnurf\\~                                                   
+                                 +/jnnvccXXXj({[1t}}tn))txxjxxx]                         ^"  +cQvXcccvvvrtjnj/(|jcccccccvunxrf/-       ;rXzzccnfru|[]-?}|zXzzvnjfrrt<                                                   
+                                 _rnvuvczcj1}(}}\t{|rx/fxunnux+                             ~uLzXYzvvvvunux/1{1|tvcccvvuvvnrjt[          ]zzzzcuuvr\)?}{])vzzcvvunxt`                                                   
+                                 _xvcczzn1([{|{(rf/junrnunuvr"                             [jJCnUXLcvvvunrt((t/((fcccvvvunnrj)`           "[czzcvcvnt|/)]}1xczzzcun(                                                    
+                                 +nvvcn|)1\1\t/jnrxuvuuvvv\"                             `1ncCvUXUQXYJcunxftf/)1)\nvvvvvunxxf;               ixzzvvvuxxt|(}1xzzzccn<                                                    
+                                 -uuu/))(/ttxxnuvuvvvcc|~                               ;fzuJznJcQ0zzJccunjrj/(||1fvvvvvuuxt^                  ^)zccvvunrf|(|rczcv/.                                                    
+                                 }vf\\\tjxxnuuvcunt?<                                 ._vJvYLrXXXQJczUzcLCcnrft\()\nvvvvunfl                      ^ifncvnnxrtfnccr:                                                     
+                                 frrfr/jft}+," ..                                    `{Xv}vLjcLvU\{uzCXXC0XLvxt\((\ruuuunjcx?`                       ..`}/vunxxuv('                                                     
+                                 '         ..' . .                                  ;rY}<jUuuU/un;nxzQUzJQ_UYuxnt|\fnnxfrYfcY|:                             `l-jn-                                                      
+                                                                                   IjUi!tccnJ]?Y|-UxYz/ccJ'tLYxzYz/txuXx+]YttXf"                          .     `I                                                      
+                                                                                  >cu',txcnJ]:/Y|/CxX}>cuU.+QUvxjLXrrCzJt;>Yt[nn_                       '.                                                              
+                                      .                                         '1X) ./xnrY- ]uC]cUxci]znz'"YCcj\xJx;tYXX} `vr_)c{.                     .                                                               
+                                     ...                                       IfL_  fu/rX- :xXn-JXxx:rXuv' fCzu/{JX}"uvJu>  (c1<uji                                                                                    
+                                   ..  .                                      "jv' '|YjxJ-  \uU~tLunjlzUvn^ -CXzx(zJrI_XuY/`  ]Y)ijv[`                                                                                  
+                                                                                  ^(XurJ?  !vXu`Xzrnt+YUcn! !JXXv/rJz{'tXvc{'  !Uti:^             .                                                                     
+                                                                                  }YcfX1.   /X_;Jt/u)-Yvru] ^cJXXcfxUu!^}?rn].  ;nu_                                                                                    
+                                                                                   ^)zt`   Ivx`|Y](n][Y{?u/^ _1[zzutzX).  IXri   `11^                                                                                   
+                                                                                  ']vc,   '|X] vu>\u?1Y!lxr>   .fXcxfYu>   +U/;                                                                                         
+                                                                                  >uU:    >vJ'IY(;tn< ` `/v{.   l\|vfvz(    1z('                                                                                        
+                                                                                  l_`     >t< ',`!jn!    +ct^     .1v)"      <_                                                                                         
+                                                                                                 ~rn,    `zrI      :ux+.                                                                                                
+                                                                                                 _ux^     ";        <r}`                                                                                                
+                                                                                                                                                                                                                        
+                                                                                                                                                                                 ..                                     
+                                                                                                                                                                                                                        
+                                                                                                                                                                                                                        
+</textarea>
+
+
+<script>
+
+// Получаем рисунок из скрытого текстового поля
+const art = document.getElementById("artSource").value.trim();
+
+const bouquet = document.getElementById("bouquet");
+
+const title = document.querySelector("h1");
+const subtitle = document.querySelector("p");
+
+let index = 0;
+
+
+// Подгоняем букет под экран
+function resizeBouquet() {
+
+    const lines = art.split("\n");
+
+    const maxWidth = Math.max(
+        ...lines.map(line => line.length)
+    );
+
+    const height = lines.length;
+
+    const availableWidth = window.innerWidth - 20;
+    const availableHeight = window.innerHeight * 0.75;
+
+    // Приблизительная ширина одного символа
+    const widthSize = availableWidth / (maxWidth * 0.6);
+
+    // Высота одной строки
+    const heightSize = availableHeight / height;
+
+    // Выбираем размер, который позволит уместить весь рисунок
+    const fontSize = Math.min(
+        16,
+        widthSize,
+        heightSize
+    );
+
+    bouquet.style.fontSize = Math.max(2, fontSize) + "px";
+}
+
+
+// Пересчитываем размер при изменении экрана
+resizeBouquet();
+
+window.addEventListener("resize", resizeBouquet);
+
+
+// Скорость прорисовки
+const speed = 50;
+
+
+function draw() {
+
+    if (index < art.length) {
+
+        bouquet.textContent += art.slice(
+            index,
+            index + speed
+        );
+
+        index += speed;
+
+        requestAnimationFrame(draw);
+
+    } else {
+
+        // Показываем надписи после появления букета
+        title.style.opacity = "1";
+        subtitle.style.opacity = "1";
+
+    }
+
+}
+
+
+// Запускаем прорисовку
+draw();
+
+</script>
+
+</body>
+</html>
